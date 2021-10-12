@@ -1,5 +1,6 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn } from "typeorm";
 import { v4 as uuid } from "uuid";
+import { Expose } from "class-transformer";
 
 @Entity()
 class Tag {
@@ -8,6 +9,11 @@ class Tag {
 
     @Column()
     name: string;
+
+    @Expose({name: "hashtag"})
+    hashtag(): string {
+        return `#${this.name}`;
+    };
 
     @CreateDateColumn()
     created_at: Date;
