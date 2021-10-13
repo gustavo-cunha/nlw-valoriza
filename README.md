@@ -14,6 +14,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [TypeORM](https://typeorm.io/)
 - [JSONWebToken](https://github.com/auth0/node-jsonwebtoken#readme)
 
+Recursos em destaque
+
+- Modificação de atributos de objetos do TypeORM usando a lib "class-transformer"
+- Adição de atributo custom à interface Express/Request incluindo @types local no typescript
+- Encriptação de senhas usando a lib "bcryptjs"
+- Geração de primary keys usando a lib "uuid"
+
 ## Como executar
 
 - Clone o repositório
